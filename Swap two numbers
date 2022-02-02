@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+//if you are using temp so use in int without remove from int 
+//there are chance to getting error if we not remove temp while using temp in code or not 
+
+	int a=5,b=10,temp;
+	//before swapping a=5 , b=10 .
+	cout<<"Before swapping " <<endl;
+	cout <<"a= "<<a <<"b= " <<b << endl;
+  
+	//using temp :
+  
+	temp=a;
+	a=b;
+	b=temp;
+  
+	/*without using temp:
+	a=a+b;
+	b=a-b;
+	a=a-b;
+  */
+  
+	//after swapping a=10 ,b=5.
+	cout<<"\n After swapping ." <<endl;
+	cout<<"a= " <<a <<"b= " <<b <<endl;
+	return 0;
+	
+}
